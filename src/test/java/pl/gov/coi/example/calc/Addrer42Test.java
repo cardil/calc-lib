@@ -1,7 +1,8 @@
 package pl.gov.coi.example.calc;
 
-import org.junit.Assert;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * @author <a href="krzysztof.suszynski@wavesoftware.pl">Krzysztof Suszyński</a>
@@ -16,11 +17,10 @@ public class Addrer42Test {
         Addrer42 addrer42 = new Addrer42();
         // when
 
-        addrer42.add(a, b);
+        int result = addrer42.add(a, b);
 
         // then
-        Assert.fail("Not yet implemented");
-
+        assertEquals(9, result);
     }
 
 }
